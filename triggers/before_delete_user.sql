@@ -1,4 +1,4 @@
-CREATE TABLE deleted_users_log (
+CREATE TABLE IF NOT EXISTS deleted_users_log (
     user_id INT,
     user_email VARCHAR(255),
     deleted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
